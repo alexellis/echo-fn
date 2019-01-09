@@ -1,6 +1,7 @@
 package function
 
 import (
+	"log"
 	"net/http"
 
 	"github.com/openfaas-incubator/go-function-sdk"
@@ -8,10 +9,11 @@ import (
 
 // Handle a function invocation
 func Handle(req handler.Request) (handler.Response, error) {
-	var err error
+
+	log.Printf("%s", req.Body)
 
 	return handler.Response{
 		Body:       req.Body,
 		StatusCode: http.StatusOK,
-	}, err
+	}, nil
 }
