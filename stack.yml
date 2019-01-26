@@ -6,7 +6,7 @@ functions:
   go-echo:
     lang: golang-http
     handler: ./go-echo
-    image: alexellis2/go-echo:0.2
+    image: alexellis2/go-echo:0.2.1
     environment:
       write_debug: true
     annotations:
