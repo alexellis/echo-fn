@@ -9,5 +9,8 @@ functions:
     image: alexellis2/go-echo:0.2.1
     environment:
       write_debug: true
+    labels:
+      com.openfaas.scale.min: 2
+      com.openfaas.scale.max: 2
     annotations:
       topic: vm.powered.on
