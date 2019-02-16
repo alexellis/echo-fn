@@ -11,6 +11,6 @@ functions:
       write_debug: true
     labels:
       com.openfaas.scale.min: 2
-      com.openfaas.scale.max: 2
+      com.openfaas.scale.max: 10
     annotations:
       topic: vm.powered.on
