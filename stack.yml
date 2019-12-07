@@ -12,3 +12,4 @@ functions:
     labels:
       com.openfaas.scale.min: 1
       com.openfaas.scale.max: 1
+
